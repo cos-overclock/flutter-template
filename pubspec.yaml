@@ -1,0 +1,60 @@
+name: template
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.0.2 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_localizations:
+    sdk: flutter
+
+  flutter_riverpod: ^2.3.6
+  freezed_annotation: ^2.2.0
+  json_annotation: ^4.8.1
+  riverpod_annotation: ^2.1.1
+  supabase_flutter: ^1.10.0
+  flutter_dotenv: ^5.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.4.4
+  freezed: ^2.3.4
+  json_serializable: ^6.7.0
+  custom_lint: ^0.4.0
+  riverpod_lint: ^1.3.2
+  riverpod_generator: ^2.2.3
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - .env
+
+  fonts:
+    - family: Noto-Sans
+      fonts:
+        - asset: assets/fonts/noto_sans/NotoSansJP-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/noto_sans/NotoSansJP-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/noto_sans/NotoSansJP-Light.ttf
+          weight: 300
+        - asset: assets/fonts/noto_sans/NotoSansJP-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/noto_sans/NotoSansJP-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/noto_sans/NotoSansJP-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/noto_sans/NotoSansJP-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/noto_sans/NotoSansJP-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/noto_sans/NotoSansJP-Black.ttf
+          weight: 900
