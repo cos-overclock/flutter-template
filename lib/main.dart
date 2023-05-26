@@ -11,11 +11,11 @@ import 'view/main_page/main_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  InjectionContainerBinding.bind();
   await Supabase.initialize(
     url: dotenv.get(urlSupabaseVariant),
     anonKey: dotenv.get(annoKeySupabaseVariant),
   );
+  InjectionContainerBinding.bind();
   runApp(const ProviderScope(child: MainApp()));
 }
 
