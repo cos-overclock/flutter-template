@@ -9,6 +9,7 @@ import 'value/string.dart';
 import 'view/main_page/main_page.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await Supabase.initialize(
     url: dotenv.get(urlSupabaseVariant),
     anonKey: dotenv.get(annoKeySupabaseVariant),
