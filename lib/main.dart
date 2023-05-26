@@ -4,12 +4,14 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
+import 'applications/container_biding.dart';
 import 'theme/color_schemes.g.dart';
 import 'value/string.dart';
 import 'view/main_page/main_page.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  InjectionContainerBinding.bind();
   await Supabase.initialize(
     url: dotenv.get(urlSupabaseVariant),
     anonKey: dotenv.get(annoKeySupabaseVariant),
